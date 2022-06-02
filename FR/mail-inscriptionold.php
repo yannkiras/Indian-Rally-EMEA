@@ -217,7 +217,7 @@ $mail_Data .= "
         <span style='color: #ecf0f1;'>Vous recevez ce mail suite à une inscription sur le site indianmotorcyclerally.fr</span>
         <br>
         <span style='color: #ecf0f1;'>Ce n'est pas vous ? Merci de nous contacter à</span> 
-        <a href='mailto:support@imrgmotorcyclerally.fr'>support@imrgmotorcyclerally.fr</a>
+        <a href='mailto:support@indianmotorcyclerally.fr'>support@indianmotorcyclerally.fr</a>
       </strong>
       <br>
     </p>
