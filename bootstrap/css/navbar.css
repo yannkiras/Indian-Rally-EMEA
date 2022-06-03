@@ -1,0 +1,22 @@
+body {
+    padding-bottom: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+
+.navbar, .nav-item {
+    min-eight:100px;
+}
+    .navbar li{
+        padding: 0px 20px;
+        border-right:1px solid #000;
+    }
+    .navbar li:last-child{
+        padding: 0px 20px;
+        border-right:none;
+    }
+}

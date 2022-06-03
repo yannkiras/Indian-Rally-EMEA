@@ -1,0 +1,25 @@
+# TEMP MAINTENANCE PAGE
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# local ip
+	RewriteCond %{REMOTE_ADDR} !^217.109.209.255
+
+# local ip
+	RewriteCond %{REMOTE_ADDR} !^86.206.220.17
+
+	# server ip
+	RewriteCond %{REMOTE_ADDR} !^213.186.33.87
+
+
+    RewriteRule !^maintenance\.php$ /maintenance.php [R=302,L,NC]
+
+# alternate response without custom page
+# ErrorDocument 503 "Coming soon!"
+
+<IfModule mod_headers.c>
+	# 3600 = 60 minutes
+	# 86400 = 1 day
+	# 604800 = 1 week
+	Header always set Retry-After "86400"
+</IfModule>
