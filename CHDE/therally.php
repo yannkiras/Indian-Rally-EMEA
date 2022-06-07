@@ -1,68 +1,1 @@
-<?php
-    // Start PHP session at the beginning 
-    session_start();
-    
-    // Create database connection using config file
-    include_once("db-config.php");
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
-        <meta charset="UTF-8"/>
-        <link rel="icon" type="image/png" href="favicon.png">
-        <title>Indian Motorcycle Rally</title>
-    </head>
-    <body>
-        <?php include("menu.php"); ?>
-        <!-- Container principal -->
-        <div class="bg-image py-4 rallybg">
-            <div class="container-xxl" style="min-height:600px;">
-                <div class="row m-auto py-4">
-                    <div class="col-12 col-lg-4 my-auto py-2">
-                        <img src="img/rally_carte.png" style="max-height:400px; max-width:100%;"/>
-                    </div>
-                    <div class="col-12 col-lg-8 bg-primary my-auto p-4">
-                        <center><h4 class="pb-4 text-white text-start">L&#39;INDIAN MOTORCYCLE RALLY 2022</center>
-                            
-                        </h4>
-                        <div class="row">
-                            <div class="col-12 col-lg-6 fs-7 text-white text-start">
-                                <p>■ Il s’adresse aux propriétaires d’un modèle Indian Motorcycle et inscrits au préalable à
-                                Indian Motorcycle Riders.</p>
-                                <p>■ Chaque participant s’inscrit ensuite gratuitement sur indianmotorcyclerally.fr</p>
-                                <p>■ Chaque participant effectue les déplacements de son choix, à son gré, avec sa moto en France
-                                entre le mois de mai et le 30 novembre.</p>
-                                <p>■ Chaque participant vient enregistrer chacun de ses déplacements sur indianmotorcyclerally.fr
-                                à compter qu’il contient une étape chez un concessionnaire Indian Motorcycle en France.</p>
-                                <p>■ Lors de chaque étape chez un concessionnaire Indian Motorcycle en France, le participant fait tamponner son passeport Indian Rally que le concessionnaire lui aura remis au préalable. Ainsi chaque tampon atteste l'étape du participante.</p>
-                                <p>Egalement chaque participant se photographie en portrait (selfie) devant le panneau Indian Motorcycle Rally du concessionnaire. Il peut ensuite partager sa photo sur la page Facebook Indian Motorcycle Riders</p>
-                            </div>
-                            <div class="col-12 col-lg-6 fs-7 text-start">
-                                <p class="pb-1 text-white">■ A l’occasion de chaque étape chez un concessionnaire Indian Motorcycle, le participant peut
-                                se signaler en amont et rentrer en contact avec l’IMRG local afin de découvrir les sites de la région</p>
-                                <p class="pb-1 text-white">■ Au terme du Indian Motorcycle Rally 2022 (30 novembre 2022), un classement national
-                                est établi dans 5 catégories : Scout, Chief, Springfield-Chieftain-Roadmaster, Challenger et FTR.</p>
-                                <p class="pb-1 text-white">■ Chacun des 3 premiers de chaque catégorie ayant comptabilisé la plus haute moyenne
-                                kilométrique au cumul de chacun de ses déplacements sera récompensé comme suit :</p>
-                                <div class="card text-black bg-light mb-2" style="max-width: 100ev;">
-                                    <div class="card-body">
-                                        <p class="card-text text-start mx-auto"/>
-                                        
-                                        <strong>■ 1ER : 600 € DE CHÈQUE CADEAU EN ÉQUIPEMENT ET ACCESSOIRES INDIAN MOTORCYCLE</strong><br>
-                                        <strong>■ 2ÈME : 400 € DE CHÈQUE CADEAU EN ÉQUIPEMENT ET ACCESSOIRES INDIAN MOTORCYCLE</strong><br>
-                                        <strong>■ 3ÈME : 250 € DE CHÈQUE CADEAU EN ÉQUIPEMENT ET ACCESSOIRES INDIAN MOTORCYCLE</strong><br>
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php include("footer.php"); ?>
-</body>
-</html>
+<?php// Start PHP session at the beginningsession_start();// Create database connection using config fileinclude_once("db-config.php");?><!DOCTYPE html><html><head>    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>    <meta charset="UTF-8"/>    <link rel="icon" type="image/png" href="favicon.png">    <title>Indian Motorcycle Rally</title></head><body><?php include("menu.php"); ?><!-- Container principal --><div class="bg-image py-4 rallybg">    <div class="container-xxl" style="min-height:600px;">        <div class="row m-auto py-4">            <div class="col-12 col-lg-4 my-auto py-2">                <img src="img/rally_carte.png" style="max-height:400px; max-width:100%;"/>            </div>            <div class="col-12 col-lg-8 bg-primary my-auto p-4">                <center><h4 class="pb-4 text-white text-start">DIE INDIAN MOTORCYCLE RALLY 2022</center>                </h4>                <div class="row">                    <div class="col-12 col-lg-6 fs-7 text-white text-start">                        <p>■ Teilnahmeberechtigt sind alle Besitzer/innen eines Indian Motorcycle Modells, die bei                            Indian Motorcycle Riders registriert sind.</p>                        <p>■ Jede/r Teilnehmer/in registriert sich kostenlos auf indianmotorcyclerally.eu Mit der                            Teilnahmebestätigung kann sich der/die Teilnehmer/in den original Indian Motorcycle Rally                            Pass bei seinem/ihrem örtlichen Händler abholen.</p>                        <p>■ Jeder Teilnehmer/in reist nach eigenem Belieben mit dem Motorrad durch Deutschland und                            Österreich zwischen Juni und 30. November.</p>                        <p>■ Jede/r Teilnehmer/in registriert jede Reise auf indianmotorcyclerally.com, sofern sie einen                            Stopp bei einem Indian Motorcycle Händler in Deutschland und/oder Österreich beinhaltet.</p>                    </div>                    <div class="col-12 col-lg-6 fs-7 text-start text-white">                        <p>■ Bei jedem Stopp bei einem Indian Motorcycle Händler in Deutschland und/oder Österreich                            erhält der/die Teilnehmer/in einen Stempel im Rally Pass. Jeder Stempel bescheinigt die                            jeweilig gefahrene Etappe.</p>                        <p>Außerdem soll jede/r Teilnehmer/in ein Selfie vor dem Indian Motorcycle Rally Banner beim                            Händler machen. Das Foto kann dann auf der Facebook und/oder Instagram Seite der Indian                            Motorcycle Riders geteilt werden. </p>                        <p>■ Vor jedem Zwischenstopp bei einem Indian Motorcycle Händler kann sich der/die Teilnehmer/in                            anmelden und mit der örtlichen IMRG in Kontakt treten, um gemeinsam die Highlights der                            Region zu entdecken.</p>                        <p>■ Am Ende der Indian Motorcycle Rally 2022 (30. November 2022) wird eine Rangliste für                            Deutschland und Österreich erstellt, um die Gewinner/innen mit den meisten Etappen und                            Kilometern zu küren.</p>                    </div>                </div>            </div>        </div>    </div></div><?php include("footer.php"); ?></body></html>

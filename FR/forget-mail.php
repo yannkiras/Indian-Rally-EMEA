@@ -4,7 +4,7 @@
 // Config
 $user = $_GET["user"];
 $to    = $user;
-$from  = "support@indianmotorcyclerally.fr";  // adresse MAIL OVH liée à ton hébergement.
+$from  = "support@indianmotorcyclerally.eu";  // adresse MAIL OVH liée à ton hébergement.
 
 
 $header = "From:".$from." \r\n";
@@ -166,7 +166,7 @@ $mail_Data .= "
         <span style='color: #ecf0f1;'>Vous recevez ce mail suite à une inscription sur le site indianmotorcyclerally.fr</span>
         <br>
         <span style='color: #ecf0f1;'>Ce n'est pas vous ? Merci de nous contacter à</span> 
-        <a href='mailto:support@indianmotorcyclerally.fr'>support@indianmotorcyclerally.fr</a>
+        <a href='mailto:support@indianmotorcyclerally.eu'>support@indianmotorcyclerally.eu</a>
       </strong>
       <br>
     </p>

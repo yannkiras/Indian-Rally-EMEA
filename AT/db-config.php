@@ -17,7 +17,7 @@ $datefin = $year."-12-31";
 
 
 //On définit le pays du site
-$country = "AT";
+$country = "DE";
 
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 $mysqli->set_charset("utf8");

@@ -37,14 +37,14 @@
 
 
         <div class="container-fluid mx-auto">
-            <div class="d-grid gap-md-4 gap-xl-5 d-md-block bg-white py-4" aria-label="Basic outlined example">
-                <a role="button" class="btn btn-white btn" href="UK/index.php">UNITED KINGDOM & IRELAND</a>
-                <a role="button" class="btn btn-white" href="FR/index.php">FRANCE</a>
-                <a role="button" class="btn btn-white" href="ES/index.php">ANDORRA Y ESPAÑA</a>
-                <a role="button" class="btn btn-white" href="DE/index.php">DEUTSCHLAND</a>
-                <a role="button" class="btn btn-white" href="AT/index.php">ÖSTERREICH</a>
-                <a role="button" class="btn btn-white" href="ch.php">SWITZERLAND</a>
-                <a role="button" class="btn btn-white" href="PT/index.php">PORTUGAL</a>
+            <div class="d-grid gap-md-4 gap-xl-5 d-md-block bg-white py-4 fw-bolder" aria-label="Basic outlined example">
+                <a role="button" class="btn btn-light btn fw-bold" href="UK/index.php">UNITED KINGDOM & IRELAND</a>
+                <a role="button" class="btn btn-light fw-bold" href="FR/index.php">FRANCE</a>
+                <a role="button" class="btn btn-light fw-bold" href="ES/index.php">ANDORRA Y ESPAÑA</a>
+                <a role="button" class="btn btn-light fw-bold" href="DE/index.php">DEUTSCHLAND</a>
+                <a role="button" class="btn btn-light fw-bold" href="AT/index.php">ÖSTERREICH</a>
+                <a role="button" class="btn btn-light fw-bold" href="ch.php">SWITZERLAND</a>
+                <a role="button" class="btn btn-light fw-bold" href="PT/index.php">PORTUGAL</a>
             </div>
 
         </div>
