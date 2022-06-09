@@ -31,32 +31,20 @@
                             <div class="col-12 col-lg-6 fs-7 text-white text-start">
                                 <p>■ Il s’adresse aux propriétaires d’un modèle Indian Motorcycle et inscrits au préalable à
                                 Indian Motorcycle Riders.</p>
-                                <p>■ Chaque participant s’inscrit ensuite gratuitement sur indianmotorcyclerally.fr</p>
-                                <p>■ Chaque participant effectue les déplacements de son choix, à son gré, avec sa moto en France
+                                <p>■ Chaque participant s’inscrit ensuite gratuitement sur indianmotorcyclerally.eu</p>
+                                <p>■ Chaque participant effectue les déplacements de son choix, à son gré, avec sa moto en Suisse
                                 entre le mois de mai et le 30 novembre.</p>
-                                <p>■ Chaque participant vient enregistrer chacun de ses déplacements sur indianmotorcyclerally.fr
-                                à compter qu’il contient une étape chez un concessionnaire Indian Motorcycle en France.</p>
+                                <p>■ Chaque participant vient enregistrer chacun de ses déplacements sur indianmotorcyclerally.eu
+                                à compter qu’il contient une étape chez un concessionnaire Indian Motorcycle en Suisse.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 fs-7 text-white text-start">
                                 <p>■ Lors de chaque étape chez un concessionnaire Indian Motorcycle en France, le participant fait tamponner son passeport Indian Rally que le concessionnaire lui aura remis au préalable. Ainsi chaque tampon atteste l'étape du participante.</p>
                                 <p>Egalement chaque participant se photographie en portrait (selfie) devant le panneau Indian Motorcycle Rally du concessionnaire. Il peut ensuite partager sa photo sur la page Facebook Indian Motorcycle Riders</p>
-                            </div>
-                            <div class="col-12 col-lg-6 fs-7 text-start">
-                                <p class="pb-1 text-white">■ A l’occasion de chaque étape chez un concessionnaire Indian Motorcycle, le participant peut
+                                <p class="pb-1">■ A l’occasion de chaque étape chez un concessionnaire Indian Motorcycle, le participant peut
                                 se signaler en amont et rentrer en contact avec l’IMRG local afin de découvrir les sites de la région</p>
-                                <p class="pb-1 text-white">■ Au terme du Indian Motorcycle Rally 2022 (30 novembre 2022), un classement national
+                                <p class="pb-1">■ Au terme du Indian Motorcycle Rally 2022 (30 novembre 2022), un classement national
                                 est établi dans 5 catégories : Scout, Chief, Springfield-Chieftain-Roadmaster, Challenger et FTR.</p>
-                                <p class="pb-1 text-white">■ Chacun des 3 premiers de chaque catégorie ayant comptabilisé la plus haute moyenne
-                                kilométrique au cumul de chacun de ses déplacements sera récompensé comme suit :</p>
-                                <div class="card text-black bg-light mb-2" style="max-width: 100ev;">
-                                    <div class="card-body">
-                                        <p class="card-text text-start mx-auto"/>
-                                        
-                                        <strong>■ 1ER : 600 € DE CHÈQUE CADEAU EN ÉQUIPEMENT ET ACCESSOIRES INDIAN MOTORCYCLE</strong><br>
-                                        <strong>■ 2ÈME : 400 € DE CHÈQUE CADEAU EN ÉQUIPEMENT ET ACCESSOIRES INDIAN MOTORCYCLE</strong><br>
-                                        <strong>■ 3ÈME : 250 € DE CHÈQUE CADEAU EN ÉQUIPEMENT ET ACCESSOIRES INDIAN MOTORCYCLE</strong><br>
-                                        
-                                    </p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>

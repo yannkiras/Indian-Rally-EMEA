@@ -279,7 +279,9 @@
 				</div>";
 				//end card
 			}
-			
+        // on fait un retour à la ligne après les étapes effectuées
+
+        echo"</div><br> <div class='row row-cols-1 row-cols-md-3'>";
 			//on établit la liste des étapes non effectuées
 			
 			

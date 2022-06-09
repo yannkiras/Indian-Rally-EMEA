@@ -45,6 +45,16 @@ if ($_SESSION["role"] != "admin") {
 
     <div class="container">
 
+        <div class="row mx-auto">
+            <div class="col-6 col-lg-auto mx-auto"><a href="../FR/admin.php"><img src="../img/flag_fr.png" class="img-fluid" style="max-width: 150px"></a></div>
+            <div class="col-6 col-lg-auto mx-auto"><a href="../CH/admin.php"><img src="../img/flag_ch.png" class="img-fluid" style="max-width: 150px"></a></div>
+            <div class="col-6 col-lg-auto mx-auto border border-5 border-success"><a href="../DE/admin.php"><img src="../img/flag_de.png" class="img-fluid" style="max-width: 150px"></a></div>
+            <div class="col-6 col-lg-auto mx-auto"><a href="../AT/admin.php"><img src="../img/flag_at.png" class="img-fluid" style="max-width: 150px"></a></div>
+            <div class="col-6 col-lg-auto mx-auto"><a href="../ES/admin.php"><img src="../img/flag_es.png" class="img-fluid" style="max-width: 150px"></a></div>
+            <div class="col-6 col-lg-auto mx-auto"><a href="../PT/admin.php"><img src="../img/flag_pt.png" class="img-fluid" style="max-width: 150px"></a></div>
+            <div class="col-6 col-lg-auto mx-auto"><a href="../UK/admin.php"><img src="../img/flag_uk.png" class="img-fluid" style="max-width: 150px"></a></div>
+        </div>
+        <br>
         <h4>NOMBRE DE PARTICIPANTS INCRITS EN <?php
             $year = date("Y");
             echo $year;
@@ -67,7 +77,7 @@ if ($_SESSION["role"] != "admin") {
             <?php
             //on établit la distance totale
 
-            $sql = "select SUM(km) as distance from rally_concess join rally_voyages on rally_voyages.id_concess=rally_concess.id WHERE rally_voyages.date >= '".$datedebut."' AND rally_voyages.date <= '".$datefin."' AND rally_concess.pays ='".$country."' ORDER BY rally_voyages.date ASC";
+            $sql = "select SUM(km) as distance from rally_concess join rally_voyages on rally_voyages.id_concess=rally_concess.id WHERE rally_voyages.date >= '" . $datedebut . "' AND rally_voyages.date <= '" . $datefin . "' AND rally_concess.pays ='" . $country . "' ORDER BY rally_voyages.date ASC";
 
             $result = mysqli_query($mysqli, $sql);
 
@@ -115,8 +125,7 @@ if ($_SESSION["role"] != "admin") {
                     <?php
                     //on établit la liste des motos
 
-                    $sql = "select moto, COUNT(id) as num from rally_users WHERE last_connected >= '" . $datedebut . "' AND last_connected <= '" . $datefin . "' and pays = '" . $country . "'GROUP BY moto ORDER BY num DESC";
-
+                    $sql = "SELECT rally_users.moto, COUNT(DISTINCT rally_users.id) as num FROM rally_users JOIN rally_voyages ON rally_users.id=rally_voyages.id_pilote JOIN rally_concess ON rally_concess.id=rally_voyages.id_concess WHERE rally_concess.pays='" . $country . "' AND rally_voyages.date >= '" . $datedebut . "' AND rally_voyages.date <= '" . $datefin . "' GROUP BY rally_users.moto ORDER BY num DESC";
                     $result = mysqli_query($mysqli, $sql);
 
                     while ($row = mysqli_fetch_assoc($result)) {
@@ -148,7 +157,7 @@ if ($_SESSION["role"] != "admin") {
                     <?php
                     //on établit la liste des motos et des étapes des comptes connectés cette année
 
-                    $sql = "select moto, COUNT(id) as num, SUM(km) as km, ROUND(SUM(km)/COUNT(id)) as moyenne from rally_users join rally_voyages on rally_voyages.id_pilote=rally_users.id WHERE date >= '" . $datedebut . "' AND date <= '" . $datefin . "' AND rally_users.pays = '" . $country . "'GROUP BY moto ORDER BY COUNT(id) DESC";
+                    $sql = "SELECT rally_users.moto, COUNT(rally_voyages.id_voyage) AS num, SUM(rally_voyages.km) as km, ROUND(SUM(rally_voyages.km)/COUNT(rally_voyages.id_voyage)) as moyenne FROM rally_users JOIN rally_voyages ON rally_users.id=rally_voyages.id_pilote JOIN rally_concess ON rally_concess.id=rally_voyages.id_concess WHERE rally_concess.pays='" . $country . "' AND rally_voyages.date >= '" . $datedebut . "' AND rally_voyages.date <= '" . $datefin . "' GROUP BY moto ORDER BY km DESC";
 
                     $result = mysqli_query($mysqli, $sql);
 
@@ -221,7 +230,7 @@ if ($_SESSION["role"] != "admin") {
                     <?php
                     //on établit la liste des pilotes
 
-                    $sql = "select nom, prenom, rally_users.cp as cp, rally_users.ville as ville, moto, COUNT(id_voyage) as etapes ,SUM(km) as km FROM rally_users left join rally_voyages on rally_voyages.id_pilote=rally_users.id WHERE date >= '" . $datedebut . "' AND date <= '" . $datefin . "'  GROUP BY id ORDER BY nom ASC";
+                    $sql = "SELECT rally_users.nom,rally_users.prenom,rally_users.cp,rally_users.ville,rally_users.moto,count(rally_voyages.id_voyage) AS etapes, SUM(rally_voyages.km) AS km FROM rally_users JOIN rally_voyages ON rally_users.id=rally_voyages.id_pilote JOIN rally_concess ON rally_concess.id=rally_voyages.id_concess WHERE rally_concess.pays='" . $country . "' AND rally_voyages.date >= '" . $datedebut . "' AND rally_voyages.date <= '" . $datefin . "' GROUP BY rally_users.id ORDER BY km DESC";
 
                     $result = mysqli_query($mysqli, $sql);
 

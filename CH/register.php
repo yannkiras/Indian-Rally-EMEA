@@ -74,6 +74,7 @@ include("menu.php");
                     $_SESSION["email"] = $email;
                     $_SESSION["prenom"] = $prenom;
                     $_SESSION["nom"] = $nom;
+                    $_SESSION["moto"] = $moto;
                     // On redirige vers la page d'envoi du mail de bienvenue
                     header("location: mail-inscription.php");
                 } else {
