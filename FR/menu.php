@@ -42,7 +42,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white" aria-label="Rally navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="../index.php">
       <img src="img/rally_brand.png" alt="" height="60">
     </a>
 	  
