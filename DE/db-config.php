@@ -14,7 +14,10 @@ $databasePassword = '6NYAivrR';
 $year = date("Y");
 $datedebut = $year."-01-01";
 $datefin = $year."-12-31";
-
+//On définit la date du jour
+$today = date("Y-m-d");
+// on définit la date de fin du rally
+$finrally = $year."-11-30";
 
 //On définit le pays du site
 $country = "DE";

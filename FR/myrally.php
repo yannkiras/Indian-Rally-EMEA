@@ -303,9 +303,10 @@
 				<h5 class='card-title'>".$row['concess']."</h5>
 				<p class='card-text'>".mb_strtoupper($row['adresse'])."<br>
 				".$row['cp']." ".$row['ville']."<br>
-				".$row['telephone']."</p>
-				
-				<!-- Button trigger modal -->
+				".$row['telephone']."</p>";
+				if ($today<$finrally) {
+
+                echo"<!-- Button trigger modal -->
 				<button type='button' class='btn btn-light text-primary' data-toggle='modal' data-target='#Modal".$id_concess."'>
 				Valider cette étape
 				</button>
@@ -338,12 +339,13 @@
 				</div>
 				</div>
 				</div>		
-				<!-- Fin Modal -->
-				
-				
-				
-				
-				
+				<!-- Fin Modal -->";
+                }
+
+
+
+
+				echo"
 				</div>
 				</div> 
 				</div>";

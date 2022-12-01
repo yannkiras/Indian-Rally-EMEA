@@ -304,8 +304,10 @@ if (!isset($_SESSION["email"])) {
 				<h5 class='card-title'>" . $row['concess'] . "</h5>
 				<p class='card-text'>" . mb_strtoupper($row['adresse']) . "<br>
 				" . $row['cp'] . " " . $row['ville'] . "<br>
-				" . $row['telephone'] . "</p>
-				
+				" . $row['telephone'] . "</p>";
+
+            if ($today < $finrally) {
+                echo "
 				<!-- Button trigger modal -->
 				<button type='button' class='btn btn-light text-primary' data-toggle='modal' data-target='#Modal" . $id_concess . "'>
 				Valider cette étape
@@ -339,13 +341,11 @@ if (!isset($_SESSION["email"])) {
 				</div>
 				</div>
 				</div>		
-				<!-- Fin Modal -->
-				
-				
-				
-				
-				
-				</div>
+				<!-- Fin Modal -->";
+            }
+
+
+            echo "</div>
 				</div> 
 				</div>";
             // end card
